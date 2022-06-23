@@ -2,10 +2,15 @@ const express = require("express");
 const path = require("path");
 const morgan = require("morgan");
 const { engine } = require('express-handlebars')
-const { extname } = require('path')
+// const { extname } = require('path')
 
 const app = express();
 const port = 3000;
+
+// Cấu hình file Static(img...)
+// public: thư mục gốc cần tìm 
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.use(morgan("combined")); // check whether request is sent to server?
 
