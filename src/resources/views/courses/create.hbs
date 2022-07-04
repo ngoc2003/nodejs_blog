@@ -1,0 +1,25 @@
+<div class="mt-4">
+  <h3>Create course</h3>
+  <form method="POST" action="/courses/store">
+    <div class="mb-3">
+        <label for="name">NAME</label>
+      <input
+        name="name"
+        type="text"
+        class="form-control my-4"
+        id="name"
+        placeholder="TEN KHOA HOC"
+      />
+        <label for="description">DESCRIPTION</label>
+      <input
+        name="description"
+        type="text"
+        class="form-control my-4"
+        id="description"
+        placeholder="MO TA"
+      />
+      {{! <input name="q" type="text" class="form-control my-4" id="exampleFormControlInput1" placeholder="VIDEO ID"> }}
+    </div>
+    <button type="submit" class="btn btn-primary mb-3">CREATE</button>
+  </form>
+</div>
